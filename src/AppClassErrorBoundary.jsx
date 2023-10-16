@@ -1,5 +1,9 @@
 import React from 'react';
 
+//  Only class components can be the error boundaries
+//  https://stackoverflow.com/a/48484745
+//  https://legacy.reactjs.org/docs/error-boundaries.html#introducing-error-boundaries
+
 class AppClassErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
