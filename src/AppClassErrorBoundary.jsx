@@ -8,6 +8,12 @@ class AppClassErrorBoundary extends React.Component {
     };
   }
 
+  //    A class component becomes an error boundary if it
+  //    defines either(or both) of the lifecycle methods
+  //    static getDerivedStateFromError() or componentDidCatch().
+  //    Use static getDerivedStateFromError() to render a fallback UI
+  //    after an error has been thrown.Use componentDidCatch()
+  //    to log error information.
   static getDerivedStateFromError = (error) => {
     return { hasError: true };
   };
